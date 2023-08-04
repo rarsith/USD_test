@@ -1,0 +1,17 @@
+USD_INSTALL_ROOT = path to USD folder data
+
+----------------------------------
+PYTHONPATH = USD_INSTALL_ROOT/lib/python
+PATH = USD_INSTALL_ROOT/bin, USD_INSTALL_ROOT/lib/bin
+
+Making USDVIEW work in Windows 10
+
+----------------------------------
+env variables to set in the usdviewew/cmd fle
+@set BINP=%~dp0
+@set LIBP=%~dp0..\lib
+@set PYP=%~dp0..\lib\python
+@set PATH=%PATH%;%BINP%;%LIBP%
+@set PYTHONPATH=%PYTHONPATH%;%PYP%
+@python “%~dp0usdview” %*
+

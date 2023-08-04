@@ -1,0 +1,10 @@
+#usda 1.0
+(
+    subLayers = [
+        @./shot_sim.usda@,
+        @./shot_anim.usda@,
+        @./shot_layout.usda@,
+        @./shot_sets.usda@
+    ]
+)
+

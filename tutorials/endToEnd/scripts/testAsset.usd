@@ -1,0 +1,20 @@
+#usda 1.0
+(
+    defaultPrim = "testAsset"
+    upAxis = "Y"
+)
+
+def Xform "testAsset" (
+    assetInfo = {
+        asset identifier = @testAsset/testAsset.usd@
+        string name = "testAsset"
+    }
+    kind = "component"
+    prepend references = [
+        @./testAsset.shadingVariants.usda@,
+        @./testAsset.maya.usd@
+    ]
+)
+{
+}
+
